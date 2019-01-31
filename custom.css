@@ -1,0 +1,21 @@
+a.social-link {
+    margin-right: 1em;
+}
+
+.whitespace {
+    height: 3em;
+}
+
+.main {
+    font-size: 1.4em;
+}
+
+/* custom for bulma */
+
+figure.image.is-300x300 {
+    width: 15em;
+}
+
+.is-centered {
+    text-align: center;
+}
