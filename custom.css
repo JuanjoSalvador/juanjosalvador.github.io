@@ -19,3 +19,13 @@ figure.image.is-300x300 {
 .is-centered {
     text-align: center;
 }
+
+@media(max-width: 768px) {
+    div#icons {
+        display: none;
+    }
+
+    figure#avatar {
+        margin: 0 auto;
+    }
+}
