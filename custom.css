@@ -1,31 +1,74 @@
-a.social-link {
-    margin-right: 1em;
-}
+a.social-link { margin-right: 1em; }
 
-.whitespace {
-    height: 3em;
-}
+.whitespace { height: 3em; }
 
 .main {
     font-size: 1.4em;
-}
-
-/* custom for bulma */
-
-figure.image.is-300x300 {
-    width: 12em;
-}
-
-.is-centered {
     text-align: center;
 }
 
+.main ul, h3 {
+    text-align: left !important;
+}
+
+.section { height: 60vh !important; }
+
+/* custom for bulma */
+
+figure.image.is-300x300 { width: 12em; }
+
+.is-centered { text-align: center; }
+
+.is-vcentered {
+    top: 5vh;
+    position: relative;
+}
+
+.bio, ul.fa-ul li { font-size: 1.6em; }
+
+section#coding-skills {
+    color: antiquewhite;
+    background-color: darkcyan;
+}
+
+section#systems-knowledge {
+    color: antiquewhite;
+    background-color: brown;
+}
+
+section#interests {
+    color: antiquewhite;
+    background-color: seagreen;
+}
+
+section#coding-skills h3, section#systems-knowledge h3, section#interests h3 {
+    color: white !important;
+    font-weight: bold;
+}
+
+footer.footer {
+    background-color: #d3d3d3;
+}
+
 @media(max-width: 768px) {
-    div#icons {
-        display: none;
-    }
+
+    #coding-skills > div > div > div:nth-child(1) > div > svg { display: none; }
+    #systems-knowledge > div > div > div:nth-child(1) > div > svg { display: none; }
+    #interests > div > div > div:nth-child(1) > div > svg { display: none; }
+
+    .bio, ul.fa-ul li { font-size: 1.1em; }
 
     figure#avatar {
         margin: 0 auto;
     }
+
+    .is-vcentered {
+        top: -8vh;
+        position: relative;
+    }
+
+}
+
+@media(max-height: 550px) {
+    .bio, ul.fa-ul li { font-size: 0.8em; }
 }

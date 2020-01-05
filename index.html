@@ -9,74 +9,99 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="custom.css">
 
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
 
   </head>
+  
   <body>
     <div id="wrapper">
-        <section class="hero is-info">
+        <section class="hero is-info is-fullheight" id="main">
             <div class="hero-body">
                 <div class="container main">
                     <div class="columns">
-                        <div class="column">
-                            <h1 class="title is-1">Juanjo Salvador</h1>
-                            <p><strong>Web Developer</strong> with <strong>SysAdmin</strong> skills, <strong>Debian</strong> user and <strong>GNOME</strong> supporter. Currently working at <strong>ViewNext</strong>.</p>
-                        </div>
-                        <div class="column"></div>
                         <div class="column">
                             <figure class="image is-300x300" id="avatar">
                                 <img src="https://avatars2.githubusercontent.com/u/5058655" class="is-rounded" />
                             </figure>
                         </div>
+                        
+                        <div class="column"></div>
+
+                        <div class="column">
+                            <p>Hello! I am</p>
+                                <h1 class="title is-1">Juanjo Salvador</h1>
+                            <p>
+                                and I'm a <strong class="bio">Web Developer</strong>, with 
+                                <strong class="bio">sysadmin skills</strong>, who loves <strong class="bio">making videogames</strong>
+                                and <strong class="bio">learning</strong>. I'm currently working at <strong class="bio">ViewNext</strong>.
+                            </p>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="coding-skills">
             <div class="container main">
-                <div class="columns" id="icons">
-                        <div class="column is-centered"><i class="fas fa-code fa-3x"></i></div>
-                        <div class="column is-centered"><i class="fas fa-server fa-3x"></i></div>
-                        <div class="column is-centered"><i class="fas fa-book fa-3x"></i></div>
-                        <div class="column is-centered"><i class="fas fa-laptop fa-3x"></i></div>
-                </div>
                 <div class="columns">
                     <div class="column">
-                        <!--  -->
-                        <h3 class="title is-3 is-centered">Development skills</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>JavaScript</li>
-                            <li>HTML5 and CSS</li>
-                            <li>Android development</li>
+                        <div class="is-vcentered">
+                            <i class="fas fa-code fa-8x"></i>
+                        </div>
+                    </div>
+
+                    <div class="column is-vcentered">
+                        <h3 class="title is-3">Coding skills</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fab fa-java"></i></span> Java</li>
+                            <li><span class="fa-li"><i class="fab fa-python"></i></span> Python</li>
+                            <li><span class="fa-li"><i class="fab fa-js"></i></span> JavaScript</li>
+                            <li><span class="fa-li"><i class="fab fa-html5"></i></span> HTML5 and CSS3</li>
                         </ul>
                     </div>
-                    <div class="column">
-                        <h3 class="title is-3 is-centered">SysAdmin skills</h3>
-                        <ul>
-                            <li>Shell scripting</li>
-                            <li>Basics of Ansible</li>
-                            <li>UNIX/Linux systems</li>
-                            <li>Docker management</li>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="systems-knowledge">
+            <div class="container main">
+                <div class="columns">
+                    <div class="column is-centered">
+                        <div class="is-vcentered">
+                            <i class="fas fa-server fa-8x"></i>
+                        </div>
+                    </div>
+
+                    <div class="column is-vcentered">
+                        <h3 class="title is-3">Systems knowledge</h3>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fab fa-docker"></i></span> Docker</li>
+                            <li><span class="fa-li"><i class="fab fa-redhat"></i></span> Ansible</li>
+                            <li><span class="fa-li"><i class="fas fa-file"></i></span>   Shell scripting</li>
+                            <li><span class="fa-li"><i class="fab fa-linux"></i></span>  UNIX systems</li>
+                            <li><span class="fa-li"><i class="fas fa-database"></i></span>  DB management</li>
                         </ul>
                     </div>
-                    <div class="column">
-                        <h3 class="title is-3 is-centered">Currently learning</h3>
-                        <ul>                          
-                            <li>Ruby for web development</li>
-                            <li>Advanced Ansible</li>
-                            <li>Russian</li>
-                            <li>Android reverse engineering</li>
-                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="interests">
+            <div class="container main">
+                <div class="columns">
+                    <div class="column is-centered">
+                        <div class="is-vcentered">
+                            <i class="fas fa-laptop fa-8x"></i>
+                        </div>
                     </div>
-                    <div class="column">
+
+                    <div class="column is-vcentered">
                         <h3 class="title is-3 is-centered">Interests</h3>
-                        <ul>                           
-                            <li>GNU/Linux</li>
-                            <li>Web development</li>
-                            <li>Lua GameDev</li>
-                            <li>Free and OpenSource Software</li>
+                        <ul class="fa-ul">                           
+                            <li><span class="fa-li"><i class="fab fa-linux"></i></span>GNU/Linux</li>
+                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>Web development</li>
+                            <li><span class="fa-li"><i class="fas fa-gamepad"></i></span>Game development</li>
+                            <li><span class="fa-li"><i class="fab fa-osi"></i></span>Free and OpenSource Software</li>
                         </ul>
                     </div>
                 </div>
@@ -89,12 +114,15 @@
                     <div class="column"></div>
 
                     <div class="column is-centered">
-                        <h2 class="subtitle is-3">Find me at</h2>
-                        <a href="https://github.com/JuanjoSalvador" class="social-link"><i class="fab fa-github-alt fa-3x"></i></a>
-                        <a href="https://twitter.com/linuxneitor" class="social-link"><i class="fab fa-twitter fa-3x"></i></a>
-                        <a href="https://mastodon.social/@jsalvador" rel="me" class="social-link"><i class="fab fa-mastodon fa-3x"></i></a>
-                        <a href="https://t.me/JuanjoSalvador" class="social-link"><i class="fab fa-telegram fa-3x"></i></a>
-                        <a href="mailto:juanjosalvador@netc.eu" class="social-link"><i class="fas fa-envelope fa-3x"></i></a>
+                        <div class="is-vcentered">
+                            <h2 class="title is-3">Find me at</h2>
+                            <a href="https://github.com/JuanjoSalvador" class="social-link"><i class="fab fa-github-alt fa-3x"></i></a>
+                            <a href="https://twitter.com/linuxneitor" class="social-link"><i class="fab fa-twitter fa-3x"></i></a>
+                            <a href="https://mastodon.social/@jsalvador" rel="me" class="social-link"><i class="fab fa-mastodon fa-3x"></i></a>
+                            <a href="mailto:juanjosalvador@netc.eu" class="social-link"><i class="fas fa-envelope fa-3x"></i></a>
+                            <div class="whitespace"></div>
+                            <h2 class="subtitle is-3">or read <a href="./blog" alt="Juanjo Salvador's blog link">my blog here</a>.</h2>
+                        </div>
                     </div>
 
                     <div class="column"></div>
