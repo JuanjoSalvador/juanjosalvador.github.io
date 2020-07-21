@@ -11,7 +11,31 @@ a.social-link { margin-right: 1em; }
     text-align: left !important;
 }
 
-.section { height: 60vh !important; }
+.section { 
+    min-height: 60vh;
+    /* padding-bottom: 1em;*/
+    /* padding-top: 1em;  */
+}   
+
+ul li p.description, ul li p.repository { 
+    padding-bottom: 0.5em;
+    font-size: 0.7em;
+}
+
+ul li .repository a {
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+ul li .repository a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: lightblue;
+}
+
+ul.projects {
+    margin-left: 4em;
+}
 
 /* custom for bulma */
 
@@ -20,7 +44,7 @@ figure.image.is-300x300 { width: 12em; }
 .is-centered { text-align: center; }
 
 .is-vcentered {
-    top: 5vh;
+    top: 40%;
     position: relative;
 }
 
@@ -28,7 +52,7 @@ figure.image.is-300x300 { width: 12em; }
 
 section#coding-skills {
     color: antiquewhite;
-    background-color: darkcyan;
+    background-color: #197cbe;
 }
 
 section#systems-knowledge {
@@ -38,7 +62,7 @@ section#systems-knowledge {
 
 section#interests {
     color: antiquewhite;
-    background-color: seagreen;
+    background-color: #135d8e;
 }
 
 section#coding-skills h3, section#systems-knowledge h3, section#interests h3 {
@@ -65,6 +89,14 @@ footer.footer {
     .is-vcentered {
         top: -8vh;
         position: relative;
+    }
+
+    ul.projects {
+        margin-left: 2.5em;
+    }
+
+    .title {
+        margin-top: 1.5em;
     }
 
 }
