@@ -13,8 +13,6 @@ a.social-link { margin-right: 1em; }
 
 .section { 
     min-height: 60vh;
-    /* padding-bottom: 1em;*/
-    /* padding-top: 1em;  */
 }   
 
 ul li p.description, ul li p.repository { 
@@ -24,13 +22,12 @@ ul li p.description, ul li p.repository {
 
 ul li .repository a {
     font-weight: bold;
-    color: antiquewhite;
+    color: whitesmoke;
 }
 
 ul li .repository a:hover{
     font-weight: bold;
     text-decoration: underline;
-    color: lightblue;
 }
 
 ul.projects {
@@ -50,28 +47,38 @@ figure.image.is-300x300 { width: 12em; }
 
 .bio, ul.fa-ul li { font-size: 1.6em; }
 
-section#coding-skills {
-    color: antiquewhite;
-    background-color: #197cbe;
+ul.fa-ul li > span.fa-li { top: 0.2em; }
+
+#avatar > img {
+    border: 5px solid whitesmoke;
 }
 
-section#systems-knowledge {
-    color: antiquewhite;
-    background-color: brown;
+section#coding-skills {
+    color: whitesmoke;
+    background-color: #252525;
 }
 
 section#interests {
-    color: antiquewhite;
-    background-color: #135d8e;
+    color: whitesmoke;
+    background-color: #1d1d1d;
 }
 
 section#coding-skills h3, section#systems-knowledge h3, section#interests h3 {
-    color: white !important;
+    color: whitesmoke !important;
     font-weight: bold;
 }
 
+section#contact {
+    background-color: #161616;
+}
+
+section#contact h2 {
+    color: whitesmoke !important;
+}
+
 footer.footer {
-    background-color: #d3d3d3;
+    background-color: #070707;
+    color: whitesmoke;
 }
 
 @media(max-width: 768px) {
