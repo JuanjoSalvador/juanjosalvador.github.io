@@ -1,0 +1,72 @@
+a.social-link
+  margin-right: 1em
+
+.whitespace
+  height: 3em
+
+.main
+  font-size: 1.4em
+  text-align: center
+
+  ul
+    text-align: left !important
+
+h3
+  text-align: left !important
+
+.section
+  height: 100vh !important
+
+figure.image.is-300x300
+  width: 12em
+
+.is-centered
+  text-align: center
+
+.is-vcentered
+  top: 30vh
+  position: relative
+
+.is-vcentered-50
+  top: 50vh
+  position: relative
+
+.bio, ul.fa-ul li
+  font-size: 1.6em
+
+ul.fa-ul li span.fa-li
+  top: 0.2em
+
+section
+  &#coding-skills
+    color: antiquewhite
+    background-color: darkcyan
+
+  &#systems-knowledge
+    color: antiquewhite
+    background-color: brown
+
+  &#interests
+    color: antiquewhite
+    background-color: seagreen
+
+  &#coding-skills h3, &#systems-knowledge h3, &#interests h3
+    color: white !important
+    font-weight: bold
+
+footer.footer
+  background-color: #d3d3d3
+
+@media (max-width: 768px)
+  #coding-skills > div > div > div:nth-child(1) > div > svg, #systems-knowledge > div > div > div:nth-child(1) > div > svg, #interests > div > div > div:nth-child(1) > div > svg
+    display: none
+
+  .bio, ul.fa-ul li
+    font-size: 1.4em
+
+  figure#avatar
+    margin: 0 auto
+
+  .is-vcentered, .is-vcentered-50
+    top: 0
+    position: relative
