@@ -12,7 +12,7 @@ a.social-link { margin-right: 1em; }
 }
 
 .section { 
-    min-height: 60vh;
+    min-height: 50vh;
 }   
 
 ul li p.description, ul li p.repository { 
@@ -41,7 +41,7 @@ figure.image.is-300x300 { width: 12em; }
 .is-centered { text-align: center; }
 
 .is-vcentered {
-    top: 40%;
+    top: 20%;
     position: relative;
 }
 
