@@ -1,3 +1,25 @@
+html
+  scroll-behavior: smooth
+
+.btn
+  visibility: hidden
+  position: fixed
+  bottom: 10px
+  right: 10px
+  z-index: 99
+  font-size: 15px
+  border: none
+  outline: none
+  background-color: gray
+  color: darkgray
+  text-decoration: none
+  cursor: pointer
+  padding: 15px
+  border-radius: 4px
+
+  &:hover 
+    background-color: whitesmoke
+  
 a.social-link
   margin-right: 1em
 
@@ -10,6 +32,15 @@ a.social-link
 
   ul
     text-align: left !important
+
+#introduction
+  margin-bottom: 1em
+
+#menu
+  font-size: 1.5em
+  
+  a:hover
+    text-decoration: underline
 
 h3
   text-align: left !important
@@ -31,37 +62,50 @@ figure.image.is-300x300
   top: 50vh
   position: relative
 
-.bio, ul.fa-ul li
+.bio, li
   font-size: 1.6em
 
-ul.fa-ul li span.fa-li
+li span.fa-li
   top: 0.2em
 
 section
-  &#coding-skills
-    color: antiquewhite
-    background-color: darkcyan
+  &#skills
+    color: whitesmoke
+    background-color: #252525
 
-  &#systems-knowledge
-    color: antiquewhite
-    background-color: brown
+  &#projects
+    color: whitesmoke
+    background-color: #363636
 
-  &#interests
-    color: antiquewhite
-    background-color: seagreen
+    .repository
+      font-weight: bold
+      color: whitesmoke
 
-  &#coding-skills h3, &#systems-knowledge h3, &#interests h3
-    color: white !important
+      & a
+        color: whitesmoke
+
+      & a:hover
+        text-decoration: underline
+    
+    .description
+      font-size: .7em
+      margin-bottom: 1em
+
+  &#contact
+    background-color: #252525
+  
+  &#skills h3, &#projects h3, &#contact h2
+    color: whitesmoke !important
     font-weight: bold
 
 footer.footer
   background-color: #d3d3d3
 
 @media (max-width: 768px)
-  #coding-skills > div > div > div:nth-child(1) > div > svg, #systems-knowledge > div > div > div:nth-child(1) > div > svg, #interests > div > div > div:nth-child(1) > div > svg
+  #skills > div > div > div:nth-child(1) > div > svg, #systems-knowledge > div > div > div:nth-child(1) > div > svg, #projects > div > div > div:nth-child(1) > div > svg
     display: none
 
-  .bio, ul.fa-ul li
+  .bio, li
     font-size: 1.4em
 
   figure#avatar

@@ -1,113 +1,136 @@
-a.social-link { margin-right: 1em; }
+html {
+  scroll-behavior: smooth;
+}
 
-.whitespace { height: 3em; }
+.btn {
+  visibility: hidden;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: gray;
+  color: darkgray;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+.btn:hover {
+  background-color: whitesmoke;
+}
+
+a.social-link {
+  margin-right: 1em;
+}
+
+.whitespace {
+  height: 3em;
+}
 
 .main {
-    font-size: 1.4em;
-    text-align: center;
+  font-size: 1.4em;
+  text-align: center;
+}
+.main ul {
+  text-align: left !important;
 }
 
-.main ul, h3 {
-    text-align: left !important;
+#introduction {
+  margin-bottom: 1em;
 }
 
-.section { 
-    min-height: 50vh;
-}   
-
-ul li p.description, ul li p.repository { 
-    padding-bottom: 0.5em;
-    font-size: 0.7em;
+#menu {
+  font-size: 1.5em;
+}
+#menu a:hover {
+  text-decoration: underline;
 }
 
-ul li .repository a {
-    font-weight: bold;
-    color: whitesmoke;
+h3 {
+  text-align: left !important;
 }
 
-ul li .repository a:hover{
-    font-weight: bold;
-    text-decoration: underline;
+.section {
+  height: 100vh !important;
 }
 
-ul.projects {
-    margin-left: 4em;
+figure.image.is-300x300 {
+  width: 12em;
 }
 
-/* custom for bulma */
-
-figure.image.is-300x300 { width: 12em; }
-
-.is-centered { text-align: center; }
+.is-centered {
+  text-align: center;
+}
 
 .is-vcentered {
-    top: 20%;
-    position: relative;
+  top: 30vh;
+  position: relative;
 }
 
-.bio, ul.fa-ul li { font-size: 1.6em; }
-
-ul.fa-ul li > span.fa-li { top: 0.2em; }
-
-#avatar > img {
-    border: 5px solid whitesmoke;
+.is-vcentered-50 {
+  top: 50vh;
+  position: relative;
 }
 
-section#coding-skills {
-    color: whitesmoke;
-    background-color: #252525;
+.bio, li {
+  font-size: 1.6em;
 }
 
-section#interests {
-    color: whitesmoke;
-    background-color: #1d1d1d;
+li span.fa-li {
+  top: 0.2em;
 }
 
-section#coding-skills h3, section#systems-knowledge h3, section#interests h3 {
-    color: whitesmoke !important;
-    font-weight: bold;
+section#skills {
+  color: whitesmoke;
+  background-color: #252525;
 }
-
+section#projects {
+  color: whitesmoke;
+  background-color: #363636;
+}
+section#projects .repository {
+  font-weight: bold;
+  color: whitesmoke;
+}
+section#projects .repository a {
+  color: whitesmoke;
+}
+section#projects .repository a:hover {
+  text-decoration: underline;
+}
+section#projects .description {
+  font-size: 0.7em;
+  margin-bottom: 1em;
+}
 section#contact {
-    background-color: #161616;
+  background-color: #252525;
 }
-
-section#contact h2 {
-    color: whitesmoke !important;
+section#skills h3, section#projects h3, section#contact h2 {
+  color: whitesmoke !important;
+  font-weight: bold;
 }
 
 footer.footer {
-    background-color: #070707;
-    color: whitesmoke;
+  background-color: #d3d3d3;
 }
 
-@media(max-width: 768px) {
-
-    #coding-skills > div > div > div:nth-child(1) > div > svg { display: none; }
-    #systems-knowledge > div > div > div:nth-child(1) > div > svg { display: none; }
-    #interests > div > div > div:nth-child(1) > div > svg { display: none; }
-
-    .bio, ul.fa-ul li { font-size: 1.1em; }
-
-    figure#avatar {
-        margin: 0 auto;
-    }
-
-    .is-vcentered {
-        top: -8vh;
-        position: relative;
-    }
-
-    ul.projects {
-        margin-left: 2.5em;
-    }
-
-    .title {
-        margin-top: 1.5em;
-    }
-
+@media (max-width: 768px) {
+  #skills > div > div > div:nth-child(1) > div > svg, #systems-knowledge > div > div > div:nth-child(1) > div > svg, #projects > div > div > div:nth-child(1) > div > svg {
+    display: none;
+  }
+  .bio, li {
+    font-size: 1.4em;
+  }
+  figure#avatar {
+    margin: 0 auto;
+  }
+  .is-vcentered, .is-vcentered-50 {
+    top: 0;
+    position: relative;
+  }
 }
 
-@media(max-height: 550px) {
-    .bio, ul.fa-ul li { font-size: 0.8em; }
-}
+/*# sourceMappingURL=custom.css.map */

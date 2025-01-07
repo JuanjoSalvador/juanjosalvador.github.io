@@ -10,37 +10,46 @@
     <link rel="stylesheet" href="/public/css/custom.css">
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
-
   </head>
   
   <body>
     <div id="wrapper">
+        <a class="btn" id="top-button" href="#main">🠕</a>
+        
         <section class="hero is-dark is-fullheight" id="main">
             <div class="hero-body">
                 <div class="container main">
                     <div class="columns">
                         <div class="column">
                             <figure class="image is-400x400" id="avatar">
-                                <img src="https://avatars2.githubusercontent.com/u/5058655" class="is-rounded" />
+                                <img src="/public/images/pfp.jpg" class="is-rounded" />
                             </figure>
                         </div>
                         
                         <div class="column"></div>
 
                         <div class="column">
-                            <p>Hello! I am</p>
-                                <h1 class="title is-1">Juanjo Salvador</h1>
-                            <p>
-                                <strong class="bio">Backend Developer</strong> who likes <strong class="bio">Python</strong>, loves <strong class="bio">Django</strong>
-                                and is always <strong class="bio">learning</strong>.
-                            </p>
+                            <div id="introduction">
+                                <p>Hello! I am</p>
+                                    <h1 class="title is-1">Juanjo Salvador</h1>
+                                <p>
+                                    <strong class="bio">Software Developer</strong> who likes <strong class="bio">Python</strong>, loves <strong class="bio">Django</strong>
+                                    and is always <strong class="bio">learning</strong>.
+                                </p>
+                            </div>
+
+                            <div id="menu">
+                                <a href="#skills">Skills</a> | 
+                                <a href="#projects">Projects</a> | 
+                                <a href="#contact">Contact</a>
+                            </div>
                         </div>                        
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="coding-skills">
+        <section class="section" id="skills">
             <div class="container main">
                 <div class="columns">
                     <div class="column">
@@ -62,121 +71,166 @@
             </div>
         </section>
 
-        <section class="section" id="interests">
+        <section class="section" id="projects">
             <div class="container main">
+                <h3 class="title is-1">
+                    I started many pet projects, and contributed to open-source ones as well
+                </h3>
                 <div class="columns">
-                    <div class="column is-vcentered">
-                        <h3 class="title is-3 is-centered">Projects I started</h3>
-                        <ul class="fa-ul projects">
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/JuanjoSalvador/ad-jobs">
-                                        AD Jobs
-                                    </a>
-                                </span>
-                                <p class="description">Web application to submit job offers into Telegram channel, periodically published.</p>
+                    <div class="column">
+                        <h3 class="title is-2 is-centered">Pet projects</h3>
+                        <ul class="projects">
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/JuanjoSalvador/ad-jobs">
+                                                AD Jobs
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">Web application to submit job offers into Telegram channel, periodically published.</p>
+                                </details>
                             </li>
                                                    
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/JuanjoSalvador/cakecss">
-                                        Cake CSS
-                                    </a>
-                                </span>
-                                <p class="description">A minimalistic, responsive and hackable tiny CSS library I made for hackathon projects.</p>
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/JuanjoSalvador/cakecss">
+                                                Cake CSS
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">A minimalistic, responsive and hackable tiny CSS library I made for hackathon projects.</p>
+                                </details>
                             </li>
 
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/JuanjoSalvador/covid19-spa-graph">
-                                        COVID-19 Spanish Evolution
-                                    </a>
-                                </span>
-                                <p class="description">Website showing the evolution of COVID-19 at Spain since the begining of the outbreak.</p>
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/JuanjoSalvador/covid19-spa-graph">
+                                                COVID-19 Spanish Evolution
+                                            </a>
+                                        </span>
+                                    </summary>                                    
+                                    <p class="description">Website showing the evolution of COVID-19 at Spain since the begining of the outbreak.</p>
+                                </details>
                             </li>
 
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/JuanjoSalvador/horchata">
-                                        Horchata
-                                    </a>
-                                </span>
-                                <p class="description">A bunch of micromodules made to make easier Lua game development. Build for gamejams and hackathons.</p>
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/JuanjoSalvador/horchata">
+                                                Horchata
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">A bunch of micromodules made to make easier Lua game development. Build for gamejams and hackathons.</p>
+                                </details>
                             </li>
 
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/tanukiapp/tanuki">
-                                        Tanuki
-                                    </a>
-                                </span>
-                                <p class="description">
-                                    Anime weekly schedule for Kitsu.io users. Built using Node and Express for backend and Vue 3 for frontend. Currnetly in development!
-                                </p>
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/tanukiapp/tanuki">
+                                                Tanuki
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">
+                                        Anime weekly schedule for Kitsu.io users. Built using Node and Express for backend and Vue 3 for frontend. Currnetly in development!
+                                    </p>
+                                </details>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/JuanjoSalvador/sunset-bsky">
-                                        Sunset
-                                    </a>
-                                </span>
-                                <p class="description">
-                                    An experimental Bluesky client written with Vue 3 and Nuxt. Currently in development.
-                                </p>
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/JuanjoSalvador/sunset-bsky">
+                                                Sunset
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">
+                                        An experimental Bluesky client written with Vue 3 and Nuxt. Currently in development.
+                                    </p>
+                                </details>
                             </li>
                         </ul>
                     </div>
 
-                    <div class="column is-vcentered">
-                        <h3 class="title is-3 is-centered">My open-source contributions</h3>
-                        <ul class="fa-ul projects">                           
+                    <div class="column">
+                        <h3 class="title is-2 is-centered">Open-source contributions</h3>
+                        <ul class="projects">                           
+                            <li>                                
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/tuskyapp/Tusky">
+                                                Tusky
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">An Android client for the microblogging server Mastodon. Contributed as Spanish translator.</p>
+                                </details>
+                            </li>
+
                             <li>
-                                <span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/tuskyapp/Tusky">
-                                        Tusky
-                                    </a>
-                                </span>
-                                <p class="description">An Android client for the microblogging server Mastodon. Contributed as Spanish translator.</p>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/zerasul/blask">
+                                                Blask
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">Flask based blogging engine. I made few patches with corrections and new features, such as refactoring the code and fixing security issues.</p>
+                                </details>
                             </li>
-
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/zerasul/blask">
-                                        Blask
-                                    </a>
-                                </span>
-                                <p class="description">Flask based blogging engine. I made few patches with corrections and new features, such as refactoring the code and fixing security issues.</p>
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://github.com/zerasul/genesis-code">
+                                                Genesis-Code
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">Visual Studio Code Genesis Development Extension. Minor code contributions and Windows testing.</p>
+                                </details>
                             </li>
-
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://github.com/zerasul/genesis-code">
-                                        Genesis-Code
-                                    </a>
-                                </span>
-                                <p class="description">Visual Studio Code Genesis Development Extension. Minor code contributions and Windows testing.</p>
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://fedidevs.com">
+                                                Fedidevs
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">
+                                        Portal which allows you to find developers based on your interests, at the fediverse, mainly Mastodon. Contributed with Spanish translation.
+                                    </p>
+                                </details>
                             </li>
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://fedidevs.com">
-                                        Fedidevs
-                                    </a>
-                                </span>
-                                <p class="description">
-                                    Portal which allows you to find developers based on your interests, at the fediverse, mainly Mastodon. Contributed with Spanish translation.
-                                </p>
-                            </li>
-                            <li><span class="fa-li"><i class="fas fa-file-code"></i></span>
-                                <span class="repository">
-                                    <a href="https://ypsilenna.art/">
-                                        Ypsilenna.art
-                                    </a>
-                                </span>
-                                <p class="description">
-                                    Illustration portfolio. Made in collaboration with Kornelia Reza, owner of the portal. Design and code originally by Kornelia Reza. 
-                                    I worked on the Jekyll migration of the codebase, and implemented custom plugins.
-                                </p>
+                            <li>
+                                <details>
+                                    <summary>
+                                        <span class="repository">
+                                            <a href="https://ypsilenna.art/">
+                                                Ypsilenna.art
+                                            </a>
+                                        </span>
+                                    </summary>
+                                    <p class="description">
+                                        Illustration portfolio. Made in collaboration with Kornelia Reza, owner of the portal. Design and code originally by Kornelia Reza. 
+                                        I worked on the Jekyll migration of the codebase, and implemented custom plugins.
+                                    </p>
+                                </details>
                             </li>
                         </ul>
                     </div>
@@ -218,4 +272,14 @@
         </footer>
     </div>
   </body>
+    <script>
+        document.addEventListener("scroll", function() {            
+                if (window.scrollY == 0) {
+                    document.querySelector("#top-button").style.visibility = "hidden";
+                } else {
+                    document.querySelector("#top-button").style.visibility = "visible";
+                }
+            }
+        )
+    </script>
 </html>
