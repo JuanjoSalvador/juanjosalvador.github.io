@@ -15,8 +15,28 @@
   <body>
     <div id="wrapper">
         <a class="btn" id="top-button" href="#main">🠕</a>
-        
-        <section class="hero is-dark is-fullheight" id="main">
+        <nav class="navbar is-dark" aria-label="main navigation" role="navigation" id="main">
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                </div>
+            
+                <div class="navbar-end">
+                    <a href="#skills" alt="Link to skills section" class="navbar-item">
+                        <strong>Skills</strong>
+                    </a>
+                    <a href="#projects" alt="Link to projects section" class="navbar-item">
+                        <strong>Projects</strong>
+                    </a>
+                    <a href="#contact" alt="Link to contact section" class="navbar-item">
+                        <strong>Contact</strong>
+                    </a>
+                    <a href="./blog" alt="Link to Juanjo Salvador's blog" class="navbar-item">
+                        <strong>Blog</strong>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <section class="hero is-dark is-fullheight">
             <div class="hero-body">
                 <div class="container main">
                     <div class="columns">
@@ -37,12 +57,6 @@
                                     and is always <strong class="bio">learning</strong>.
                                 </p>
                             </div>
-
-                            <div id="menu">
-                                <a href="#skills">Skills</a> | 
-                                <a href="#projects">Projects</a> | 
-                                <a href="#contact">Contact</a>
-                            </div>
                         </div>                        
                     </div>
                 </div>
@@ -50,19 +64,20 @@
         </section>
 
         <section class="section" id="skills">
-            <div class="container main">
+            <div class="container main is-vcentered">
                 <div class="columns">
                     <div class="column">
-                        <div class="is-vcentered">
+                        <div class="is-centered has-centered-icon">
                             <i class="fas fa-code fa-8x"></i>
                         </div>
                     </div>
 
-                    <div class="column is-vcentered">
-                        <h3 class="title is-3">My skills include</h3>
+                    <div class="column is-left">
+                        <h3 class="title is-1">My skills include</h3>
                         <ul class="fa-ul">
-                            <li><span class="fa-li"><i class="fab fa-python"></i></span>Django and FastAPI</li>
-                            <li><span class="fa-li"><i class="fab fa-html5"></i></span> HTML5 and CSS3</li>
+                            <li><span class="fa-li"><i class="fab fa-python"></i></span>Python and Django</li>
+                            <li><span class="fa-li"><i class="fab fa-html5"></i></span> HTML5 and CSS</li>
+                            <li><span class="fa-li"><i class="fab fa-js"></i></span> JavaScript</li>
                             <li><span class="fa-li"><i class="fab fa-docker"></i></span> Docker</li>
                             <li><span class="fa-li"><i class="fas fa-database"></i></span> DB management</li>
                         </ul>
@@ -73,185 +88,106 @@
 
         <section class="section" id="projects">
             <div class="container main">
-                <h3 class="title is-1">
-                    I started many pet projects, and contributed to open-source ones as well
+                <h3 class="title is-1 is-centered">
+                    I worked on several projects, and contributed to opensource ones as well
                 </h3>
+
+                <br/>
+
+                <h4 class="subtitle is-2 is-light">My own projects</h4>
                 <div class="columns">
                     <div class="column">
-                        <h3 class="title is-2 is-centered">Pet projects</h3>
-                        <ul class="projects">
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/JuanjoSalvador/ad-jobs">
-                                                AD Jobs
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">Web application to submit job offers into Telegram channel, periodically published.</p>
-                                </details>
-                            </li>
-                                                   
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/JuanjoSalvador/cakecss">
-                                                Cake CSS
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">A minimalistic, responsive and hackable tiny CSS library I made for hackathon projects.</p>
-                                </details>
-                            </li>
-
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/JuanjoSalvador/covid19-spa-graph">
-                                                COVID-19 Spanish Evolution
-                                            </a>
-                                        </span>
-                                    </summary>                                    
-                                    <p class="description">Website showing the evolution of COVID-19 at Spain since the begining of the outbreak.</p>
-                                </details>
-                            </li>
-
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/JuanjoSalvador/horchata">
-                                                Horchata
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">A bunch of micromodules made to make easier Lua game development. Build for gamejams and hackathons.</p>
-                                </details>
-                            </li>
-
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/tanukiapp/tanuki">
-                                                Tanuki
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">
-                                        Anime weekly schedule for Kitsu.io users. Built using Node and Express for backend and Vue 3 for frontend. Currnetly in development!
-                                    </p>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/JuanjoSalvador/sunset-bsky">
-                                                Sunset
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">
-                                        An experimental Bluesky client written with Vue 3 and Nuxt. Currently in development.
-                                    </p>
-                                </details>
-                            </li>
-                        </ul>
+                        <span class="repository">
+                            <a href="https://github.com/JuanjoSalvador/ad-jobs">
+                                AD Jobs
+                            </a>
+                        </span>
+                        <p class="description">Web application to submit job offers, which are going to be periodically published into Telegram channel. </p>
                     </div>
 
                     <div class="column">
-                        <h3 class="title is-2 is-centered">Open-source contributions</h3>
-                        <ul class="projects">                           
-                            <li>                                
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/tuskyapp/Tusky">
-                                                Tusky
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">An Android client for the microblogging server Mastodon. Contributed as Spanish translator.</p>
-                                </details>
-                            </li>
-
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/zerasul/blask">
-                                                Blask
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">Flask based blogging engine. I made few patches with corrections and new features, such as refactoring the code and fixing security issues.</p>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://github.com/zerasul/genesis-code">
-                                                Genesis-Code
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">Visual Studio Code Genesis Development Extension. Minor code contributions and Windows testing.</p>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://fedidevs.com">
-                                                Fedidevs
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">
-                                        Portal which allows you to find developers based on your interests, at the fediverse, mainly Mastodon. Contributed with Spanish translation.
-                                    </p>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>
-                                        <span class="repository">
-                                            <a href="https://ypsilenna.art/">
-                                                Ypsilenna.art
-                                            </a>
-                                        </span>
-                                    </summary>
-                                    <p class="description">
-                                        Illustration portfolio. Made in collaboration with Kornelia Reza, owner of the portal. Design and code originally by Kornelia Reza. 
-                                        I worked on the Jekyll migration of the codebase, and implemented custom plugins.
-                                    </p>
-                                </details>
-                            </li>
-                        </ul>
+                        <span class="repository">
+                            <a href="https://github.com/tanukiapp/tanuki">
+                                Tanuki
+                            </a>
+                        </span>
+                        <p class="description">
+                            Anime weekly schedule for Kitsu.io users. Built using Node and Express for backend and Vue 3 for frontend. Currnetly in development!
+                        </p>
                     </div>
+
+                    <div class="column">
+                        <span class="repository">
+                            <a href="https://github.com/JuanjoSalvador/sunset-bsky">
+                                Sunset
+                            </a>
+                        </span>
+                        <p class="description">
+                            An experimental Bluesky client written with Vue 3 and Nuxt, made mainly for learning purposes. Currently in development.
+                        </p>
+                    </div>
+
+                </div>
+
+                <h4 class="subtitle is-2 is-light">OpenSource contributions</h4>
+                <div class="columns">
+                    <div class="column">
+                        <span class="repository">
+                            <a href="https://github.com/tuskyapp/Tusky">
+                                Tusky
+                            </a>
+                        </span>
+                        <p class="description">An Android client for the microblogging server Mastodon. Contributed as Spanish translator.</p>
+                    </div>
+
+                    <div class="column">
+                        <span class="repository">
+                            <a href="https://ypsilenna.art/">
+                                Ypsilenna.art
+                            </a>
+                        </span>
+                        <p class="description">
+                            Illustration portfolio. Design and code originally by Kornelia Reza. 
+                            I worked on the Jekyll migration of the codebase, and implemented custom plugins.
+                        </p>
+                    </div>
+                    
+                    <div class="column">
+                        <span class="repository">
+                            <a href="https://github.com/zerasul/blask">
+                                Blask
+                            </a>
+                        </span>
+                        <p class="description">Flask based blogging engine. I made few patches with corrections and new features, such as refactoring the code and fixing security issues.</p>
+                    </div>
+                    <div class="column">
+                        <span class="repository">
+                            <a href="https://github.com/zerasul/genesis-code">
+                                Genesis-Code
+                            </a>
+                        </span>
+                    <p class="description">Visual Studio Code Genesis Development Extension. Minor code contributions and Windows testing.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
         <section class="section" id="contact">
             <div class="container">
+                <h3 class="title is-3 is-light is-centered is-vcentered">
+                    Do you want to ask me something? Fine!
+                </h3>
                 <div class="columns">
                     <div class="column"></div>
 
                     <div class="column is-centered">
                         <div class="is-vcentered">
-                            <h2 class="title is-3">Find me at</h2>
+                            <h4 class="subtitle is-3 is-light">Find me at</h4>
+                            <a href="https://www.linkedin.com/in/jj-salvador/" class="social-link"><i class="fab fa-linkedin fa-3x"></i></a>
                             <a href="https://github.com/JuanjoSalvador" class="social-link"><i class="fab fa-github-alt fa-3x"></i></a>
-                            <a href="https://twitter.com/linuxneitor" class="social-link"><i class="fab fa-twitter fa-3x"></i></a>
                             <a href="https://mastodon.social/@jsalvador" rel="me" class="social-link"><i class="fab fa-mastodon fa-3x"></i></a>
                             <a href="mailto:juanjosalvador@netc.eu" class="social-link"><i class="fas fa-envelope fa-3x"></i></a>
-                            <div class="whitespace"></div>
-                            <h2 class="subtitle is-3">or read <a href="./blog" alt="Juanjo Salvador's blog link">my blog here</a>.</h2>
                         </div>
                     </div>
 
