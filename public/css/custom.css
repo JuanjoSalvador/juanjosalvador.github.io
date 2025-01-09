@@ -49,12 +49,17 @@ a.social-link {
   text-decoration: underline;
 }
 
-h3 {
-  text-align: left !important;
+.is-left {
+  text-align: left;
+}
+
+.has-centered-icon {
+  position: relative;
+  top: 5rem;
 }
 
 .section {
-  height: 100vh !important;
+  min-height: 100vh !important;
 }
 
 figure.image.is-300x300 {
@@ -66,7 +71,7 @@ figure.image.is-300x300 {
 }
 
 .is-vcentered {
-  top: 30vh;
+  top: 25vh;
   position: relative;
 }
 
@@ -105,8 +110,14 @@ section#projects .description {
   font-size: 0.7em;
   margin-bottom: 1em;
 }
+section#projects h4.is-light {
+  color: whitesmoke;
+}
 section#contact {
   background-color: #252525;
+}
+section#contact h3.is-light, section#contact h4.is-light {
+  color: whitesmoke;
 }
 section#skills h3, section#projects h3, section#contact h2 {
   color: whitesmoke !important;

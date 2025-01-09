@@ -42,11 +42,15 @@ a.social-link
   a:hover
     text-decoration: underline
 
-h3
-  text-align: left !important
+.is-left
+  text-align: left
+
+.has-centered-icon
+  position: relative
+  top: 5rem
 
 .section
-  height: 100vh !important
+  min-height: 100vh !important
 
 figure.image.is-300x300
   width: 12em
@@ -55,7 +59,7 @@ figure.image.is-300x300
   text-align: center
 
 .is-vcentered
-  top: 30vh
+  top: 25vh
   position: relative
 
 .is-vcentered-50
@@ -91,8 +95,14 @@ section
       font-size: .7em
       margin-bottom: 1em
 
+    & h4.is-light
+      color: whitesmoke
+
   &#contact
     background-color: #252525
+
+    & h3.is-light, & h4.is-light
+      color: whitesmoke
   
   &#skills h3, &#projects h3, &#contact h2
     color: whitesmoke !important

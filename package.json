@@ -1,0 +1,16 @@
+{
+  "name": "my-portfolio",
+  "description": "Personal website",
+  "scripts": {
+    "watch": "browser-sync start --server  --files .",
+    "sass": "sass sass/custom.sass public/css/custom.css"
+  },
+  "author": "Juanjo Salvador <juanjosalvador@netc.eu>",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^3.0.3"
+  },
+  "dependencies": {
+    "sass": "^1.83.1"
+  }
+}
