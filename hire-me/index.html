@@ -1,1 +1,114 @@
-hire me
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Juanjo Salvador's personal webpage">
+
+    <title>Juanjo Salvador | Hire me</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="/public/css/custom.css">
+    <link rel="stylesheet" href="/public/css/hire-me.css">
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"></script>
+  </head>
+  
+  <body>
+    <div id="wrapper">
+        <a class="btn" id="top-button" href="#main">🠕</a>
+        <nav class="navbar" aria-label="main navigation" role="navigation" id="main">
+            <div id="navbar" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="/" alt="Link to home" class="navbar-item">
+                        <strong>Home</strong>
+                    </a>
+                    <a href="/blog" alt="Link to blog" class="navbar-item">
+                        <strong>Blog</strong>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="columns">
+                <div class="column">
+                    <h3 class="title is-1 is-centered">Hire me!</h3>
+                    <div class="content">
+                        <ol>
+                            <li><a class="hire-me-link" href="#background">A bit of background</a></li>
+                            <li><a class="hire-me-link" href="#philosophy">My philosophy</a></li>
+                            <li><a class="hire-me-link" href="#technologies">Tech I love</a></li>
+                            <li><a class="hire-me-link" href="#ai-thoughts">Thoughts about AI</a></li>
+                            <li><a class="hire-me-link" href="#remote-friendly">Remote-friendly</a></li>
+                        </ol>
+                        <hr />
+                        <h4 class="title is-3" id="background">A bit of background</h4>
+                        <p>
+                            I started coding when I was 8 and I found out several BASIC games on Public Library's books, which quickly generated an
+                            interest on me. At 12 I created and published my very first website at Geocites, and started reading about PHP, but never went too far.
+                        </p>
+
+                        <h4 class="title is-3" id="philosophy">My philosophy</h4>
+                        <p>
+                            <strong>KISS</strong>. <strong>K</strong>eep <strong>I</strong>t <strong>S</strong>tupidly <strong>S</strong>imple.
+                            Because life is already too complicated, just make it simplier.
+                        </p>
+                        <p>
+                            I always try to apply <a href="https://peps.python.org/pep-0020/#the-zen-of-python">the zen of Python</a>, since this is a
+                            good way to keep your code clean, scalable and easier to maintain.
+                        </p>
+                        
+                        <h4 class="title is-3" id="technologies">Tech I love</h4>
+                        <p>
+                            There are several technologies, frameworks and tools I love, and I would like to keep working with them.
+                        </p>
+
+                        <ul>
+                            <li><strong>Languages</strong>: Python, Java, JavaScript, HTML, CSS</li>
+                            <li><strong>Frameworks</strong>: Django, Django REST Framework, Bulma, Vue</li>
+                            <li><strong>Tools and platforms</strong>: Git, GitHub, Docker, Linux</li>
+                        </ul>
+                        
+                        <h4 class="title is-3" id="ai-thoughts">Thoughts about AI</h4>
+                        <p>
+                            While I consider AI a huge advance in human technology, I'm concerned and aware about its dangers
+                            and ethics using it. I will not active tell anyone to not use it, but overall I don't want to turn
+                            it into a basic tool in my life, specially speaking about code generation.
+                        </p>
+                        
+                        <h4 class="title is-3" id="remote-friendly">Remote-friendly</h4>
+                        <p>
+                            I am specially open to remote-friendly positions, since I live in a small city and moving from
+                            here at this moment is a big problem.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <br/>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    Made with <span style="color: #e25555;">&hearts;</span> by Juanjo Salvador
+                </p>
+                <a href="https://bulma.io">
+                    <img src="https://bulma.io/assets/images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                </a>
+            </div>
+        </footer>
+    </div>
+  </body>
+    <script>
+        document.addEventListener("scroll", function() {            
+                if (window.scrollY == 0) {
+                    document.querySelector("#top-button").style.visibility = "hidden";
+                } else {
+                    document.querySelector("#top-button").style.visibility = "visible";
+                }
+            }
+        )
+    </script>
+</html>
