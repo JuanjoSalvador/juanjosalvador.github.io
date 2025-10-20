@@ -89,22 +89,15 @@ li span.fa-li {
 }
 
 section#skills {
-  color: whitesmoke;
-  background-color: #252525;
+  /*background-color: #252525*/
 }
 
 section#projects {
-  color: whitesmoke;
-  background-color: #363636;
+  /*background-color: #363636*/
 }
 
 section#projects .repository {
   font-weight: bold;
-  color: whitesmoke;
-}
-
-section#projects .repository a {
-  color: whitesmoke;
 }
 
 section#projects .repository a:hover {
@@ -115,31 +108,11 @@ section#projects .description {
   font-size: 0.7em;
   margin-bottom: 1em;
 }
-
-section#projects h4.is-light {
-  color: whitesmoke;
-}
-
-section#hire-me {
-  color: whitesmoke;
-  background-color: #252525;
-}
-
 section#contact {
-  background-color: #363636;
+  /*background-color: #252525*/
 }
-
-section#contact h3.is-light, section#contact h4.is-light {
-  color: whitesmoke;
-}
-
-section#skills h3, section#projects h3, section#hire-me h3, section#contact h2 {
-  color: whitesmoke !important;
+section#skills h3, section#projects h3, section#contact h2 {
   font-weight: bold;
-}
-
-footer.footer {
-  background-color: #d3d3d3;
 }
 
 @media (max-width: 768px) {
