@@ -1,4 +1,4 @@
-<html>
+<html lang="en" data-theme="dark" class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,16 @@
   
   <body>
     <div id="wrapper">
-        <a class="btn" id="top-button" href="#main">🠕</a>
-        <nav class="navbar is-dark" aria-label="main navigation" role="navigation" id="main">
-            <div id="navbarBasicExample" class="navbar-menu">
+        <nav class="navbar is-fixed-top" aria-label="main navigation" role="navigation" id="main">
+            <div id="navbarMain" class="navbar-menu">
                 <div class="navbar-start">
+                    <a class="navbar-item" data-theme-toggle aria-label="Change to light theme"></a>
                 </div>
             
                 <div class="navbar-end">
+                    <a href="#home" alt="Link to home" class="navbar-item">
+                        <strong>Home</strong>
+                    </a>
                     <a href="#skills" alt="Link to skills section" class="navbar-item">
                         <strong>Skills</strong>
                     </a>
@@ -36,7 +39,7 @@
                 </div>
             </div>
         </nav>
-        <section class="hero is-dark is-fullheight">
+        <section class="hero is-fullheight" id="home">
             <div class="hero-body">
                 <div class="container main">
                     <div class="columns">
@@ -209,13 +212,35 @@
     </div>
   </body>
     <script>
-        document.addEventListener("scroll", function() {            
-                if (window.scrollY == 0) {
-                    document.querySelector("#top-button").style.visibility = "hidden";
-                } else {
-                    document.querySelector("#top-button").style.visibility = "visible";
-                }
+        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+            if (localStorageTheme !== null) {
+                return localStorageTheme;
             }
-        )
+
+            if (systemSettingDark.matches) {
+                return "dark";
+            }
+
+            return "light";
+        }
+
+        const localStorageTheme = localStorage.getItem("theme");
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+        // target the button using the data attribute we added earlier
+        const button = document.querySelector("[data-theme-toggle]");
+        button.innerHTML = "dark" ? "<strong>Dark 🌙</strong>" : "<strong>Light ☀️</strong>";
+
+        button.addEventListener("click", () => {
+            const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+            const newCta = newTheme === "dark" ? "<strong>Dark 🌙</strong>" : "<strong>Light ☀️</strong>";
+            button.innerHTML = newCta;  
+            button.setAttribute("aria-label", newCta);
+            document.querySelector("html").setAttribute("data-theme", newTheme);
+            localStorage.setItem("theme", newTheme);
+            currentThemeSetting = newTheme;
+        });
     </script>
 </html>
