@@ -1,0 +1,20 @@
+.content ol:not([type]) {
+    font-size: small !important;
+}
+
+.content ul {
+    font-size: x-small !important;
+}
+
+a.hire-me-link {
+    color: #444;
+    text-decoration: underline;
+}
+
+.content p {
+    font-size: large !important;
+}
+
+footer.footer {
+    background-color: white !important;
+}
