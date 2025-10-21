@@ -91,15 +91,19 @@ li span.fa-li {
 section#skills {
   /*background-color: #252525*/
 }
+
 section#projects {
   /*background-color: #363636*/
 }
+
 section#projects .repository {
   font-weight: bold;
 }
+
 section#projects .repository a:hover {
   text-decoration: underline;
 }
+
 section#projects .description {
   font-size: 0.7em;
   margin-bottom: 1em;
