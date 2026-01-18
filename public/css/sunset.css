@@ -7,6 +7,20 @@ html {
   position: relative;
 }
 
+@media (max-width: 1280px) {
+    .is-vcentered {
+        top: 10vh;
+        position: relative;
+    }   
+}
+
+@media (max-width: 980px) {
+    .is-vcentered {
+        top: 5vh;
+        position: relative;
+    }   
+}
+
 .screenshot {
     position: relative;
     border: 0.2rem dashed whitesmoke;

@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
     <link rel="stylesheet" href="/public/css/sunset.css">
+
+    <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
   </head>
   
   <body>
@@ -59,7 +61,7 @@
                                 <strong>View on GitHub</strong>
                             </a>
                         </div>
-                        
+
                         <div class="column">
                             <a class="button is-warning" href="https://github.com/JuanjoSalvador/sunset-bsky/issues" target="_blank" rel="nofollow">
                                <strong>Report an issue</strong>
@@ -82,10 +84,18 @@
                     <h3 class="title is-3">
                         Sunset is not <em>just</em> another BlueSky client
                     </h3>
-                    <br/>
                     <h4 class="subtitle is-4">
                         Because this one is fully community-driven
                     </h4>
+                    <p class="has-text-centered">
+                        Sunset is currently being developed and maintained by 
+                        <a href="https://bsky.app/profile/jsalvador.me">Juanjo Salvador</a> as a hobby. 
+                        <br/> It is written using Vue and Nuxt.
+                    </p>
+                    <br/>
+                    <script type='text/javascript'>
+                        kofiwidget2.init('Support me on Ko-fi', '#FFB70F', 'G2G082CE');kofiwidget2.draw();
+                    </script> 
                 </div>           
             </div>
         </section>
@@ -140,7 +150,7 @@
         </footer>        
     </div>
   </body>
-      <script>
+    <script>
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
                 return localStorageTheme;
