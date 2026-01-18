@@ -2,6 +2,21 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+    --border-color: #1d1d1d;
+    --buton-color: #1d1d1d;
+}
+
+html[data-theme='light'] {
+    --border-color: #1d1d1d;
+    --buton-color: #1d1d1d;
+}
+
+html[data-theme='dark'] {
+    --border-color: whitesmoke;
+    --buton-color: whitesmoke;
+}
+
 .is-vcentered {
   top: 20vh;
   position: relative;
@@ -21,15 +36,11 @@ html {
     }   
 }
 
+.button {
+    color: var(--buton-color) !important;
+}
+
 .screenshot {
     position: relative;
-    border: 0.2rem dashed whitesmoke;
-}
-
-.screenshot-left {
-    left: -3.2rem;
-}
-
-.screenshot-right {
-    left: 5.4rem;
+    border: 0.2rem dashed var(--border-color);
 }

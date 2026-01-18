@@ -1,4 +1,4 @@
-<html lang="en" class="has-navbar-fixed-top">
+<html lang="en" data-theme="light" class="has-navbar-fixed-top">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,39 +35,18 @@
                 <div class="content">
                     <div class="columns">
                         <div class="column">
-                            <figure>
+                            <!-- <figure>
                                 <img src="./assets/sunset-logo.png" width="200"/>
-                            </figure>
+                            </figure> -->
                             <span class="has-text-centered">
                                 <h1 class="title is-1">
                                     Sunset
                                 </h1>
-                                <h2 class="subtitle is-2">
-                                    Yet Another Bluesky Client
+                                <h2 class="subtitle is-3">
+                                    A web client for Bluesky
                                 </h2>
                             </span>
                         </div>                        
-                    </div>
-                    <div class="columns has-text-centered">
-                        <div class="column"></div>
-                        <div class="column">
-                            <a class="button is-warning" href="https://sunset.jsalvador.me" target="_blank" rel="nofollow">
-                                <strong>Start using Sunset</strong>
-                            </a>
-                        </div>
-                        
-                        <div class="column">
-                            <a class="button is-warning" href="https://github.com/JuanjoSalvador/sunset-bsky" target="_blank" rel="nofollow">
-                                <strong>View on GitHub</strong>
-                            </a>
-                        </div>
-
-                        <div class="column">
-                            <a class="button is-warning" href="https://github.com/JuanjoSalvador/sunset-bsky/issues" target="_blank" rel="nofollow">
-                               <strong>Report an issue</strong>
-                            </a>
-                        </div>
-                        <div class="column"></div>
                     </div>
                 </div>
             </div>
@@ -85,16 +64,29 @@
                         Sunset is not <em>just</em> another BlueSky client
                     </h3>
                     <h4 class="subtitle is-4">
-                        Because this one is fully community-driven
+                        It comes with a brand new hat.
                     </h4>
-                    <p class="has-text-centered">
-                        Sunset is currently being developed and maintained by 
-                        <a href="https://bsky.app/profile/jsalvador.me">Juanjo Salvador</a> as a hobby. 
-                        <br/> It is written using Vue and Nuxt.
-                    </p>
-                    <br/>
+                        <div class="columns has-text-centered">
+                            <div class="column"></div>
+                            <div class="column">
+                                <a class="button is-warning" href="https://sunset.jsalvador.me" target="_blank" rel="nofollow">
+                                    <strong>Start using Sunset</strong>
+                                </a>
+                            </div>
+                            
+                            <div class="column">
+                                <a class="button is-warning" href="https://github.com/JuanjoSalvador/sunset-bsky" target="_blank" rel="nofollow">
+                                    <strong>View on GitHub</strong>
+                                </a>
+                            </div>
+                        <div class="column"></div>
+                    </div>
+                    <hr/>
+                    <h4 class="title is-4">
+                        Do you like the project? Support us from 3€
+                    </h4>
                     <script type='text/javascript'>
-                        kofiwidget2.init('Support me on Ko-fi', '#FFB70F', 'G2G082CE');kofiwidget2.draw();
+                        kofiwidget2.init('Support us on Ko-fi', '#FFB70F', 'G2G082CE');kofiwidget2.draw();
                     </script> 
                 </div>           
             </div>
@@ -116,22 +108,21 @@
                 </div>
                 <div class="column is-one-fifth">
                     <h3 class="title is-3 has-text-centered">
-                        Safe to use
+                        Privacy aware
                     </h3>
                     <h4 class="subtitle is-4 has-text-centered">
                         We don't keep your data
                     </h4>
                     <p class="has-text-centered">
-                        Sunset is powered by BlueSky and AT Proto, all data you can see or send here, lives in BluesSky
-                        or their respected owners' Personal Data Servers.
+                        Sunset does not store or keep any data. Your credentials are stored only on your browser.
                     </p>
                 </div>
                 <div class="column is-one-fifth">
                     <h3 class="title is-3 has-text-centered">
-                        Contribute
+                        Free as in freedom
                     </h3>
                     <h4 class="subtitle is-4 has-text-centered">
-                        We are OpenSource!
+                        We are MIT licensed
                     </h4>
                     <p class="has-text-centered">
                         Did you find a bug? Do you think you can fix it? All our source code is available on GitHub, and it is MIT licensed!
@@ -141,10 +132,18 @@
             </div>
         </section>
 
-        <footer class="footer">
-            <div class="content has-text-centered">
+        <footer class="footer has-text-centered">
+            <div class="content">
                 <p>
-                    Made with <span style="color: #e25555;">&hearts;</span> by Juanjo Salvador
+                    <strong>Made with <span style="color: #e25555;">&hearts;</span> by <a href="https://jsalvador.me">Juanjo Salvador</a></strong>.
+                </p>
+            </div>
+            <div class="content is-small">
+                <p>
+                    Sunset is not affiliated with or endorsed to Bluesky Social.
+                </p>
+                <p>
+                    This project is made purely as hobby with <a href="">Vue</a> and <a href="">Nuxt</a>. Landing page made with HTML and <a href="https://bulma.io/">Bulma</a>.
                 </p>
             </div>
         </footer>        
@@ -170,11 +169,11 @@
 
         // target the button using the data attribute we added earlier
         const button = document.querySelector("[data-theme-toggle]");
-        button.innerHTML = "dark" ? "<strong>Dark 🌙</strong>" : "<strong>Light ☀️</strong>";
+        button.innerHTML = "dark" ? "<strong>Dark mode 🌙</strong>" : "<strong>Light mode ☀️</strong>";
 
         button.addEventListener("click", () => {
             const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
-            const newCta = newTheme === "dark" ? "<strong>Dark 🌙</strong>" : "<strong>Light ☀️</strong>";
+            const newCta = newTheme === "dark" ? "<strong>Dark mode 🌙</strong>" : "<strong>Light mode ☀️</strong>";
             button.innerHTML = newCta;  
             button.setAttribute("aria-label", newCta);
             document.querySelector("html").setAttribute("data-theme", newTheme);
