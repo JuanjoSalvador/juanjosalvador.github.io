@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.is-vcentered {
+  top: 20vh;
+  position: relative;
+}
+
+.screenshot {
+    position: relative;
+    border: 0.2rem dashed whitesmoke;
+}
+
+.screenshot-left {
+    left: -3.2rem;
+}
+
+.screenshot-right {
+    left: 5.4rem;
+}

@@ -1,0 +1,175 @@
+<html lang="en" class="has-navbar-fixed-top">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sunset, a Bluesky client">
+
+    <title>Sunset - A Bluesky Client</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="/public/css/sunset.css">
+  </head>
+  
+  <body>
+    <nav class="navbar is-fixed-top" aria-label="main navigation" role="navigation" id="main">
+        <div id="navbarMain" class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#">
+                        <img src="./assets/sunset-logo.png" />
+                        <strong>Sunset</strong>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="navbar-end">
+                <a class="navbar-item" data-theme-toggle aria-label="Change to light theme"></a>
+            </div>
+        </div>
+    </nav>
+    <div class="content-wrapper">
+        <section class="section hero">
+            <div class="hero-body">
+                <div class="content">
+                    <div class="columns">
+                        <div class="column">
+                            <figure>
+                                <img src="./assets/sunset-logo.png" width="200"/>
+                            </figure>
+                            <span class="has-text-centered">
+                                <h1 class="title is-1">
+                                    Sunset
+                                </h1>
+                                <h2 class="subtitle is-2">
+                                    Yet Another Bluesky Client
+                                </h2>
+                            </span>
+                        </div>                        
+                    </div>
+                    <div class="columns has-text-centered">
+                        <div class="column"></div>
+                        <div class="column">
+                            <a class="button is-warning" href="https://sunset.jsalvador.me" target="_blank" rel="nofollow">
+                                <strong>Start using Sunset</strong>
+                            </a>
+                        </div>
+                        
+                        <div class="column">
+                            <a class="button is-warning" href="https://github.com/JuanjoSalvador/sunset-bsky" target="_blank" rel="nofollow">
+                                <strong>View on GitHub</strong>
+                            </a>
+                        </div>
+                        
+                        <div class="column">
+                            <a class="button is-warning" href="https://github.com/JuanjoSalvador/sunset-bsky/issues" target="_blank" rel="nofollow">
+                               <strong>Report an issue</strong>
+                            </a>
+                        </div>
+                        <div class="column"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section has-text-centered">
+            <div class="columns is-2">
+                <div class="column">
+                    <figure>
+                        <img src="./assets/screenshots/profile.png" class="screenshot screenshot-left" />
+                    </figure>
+                </div> 
+                <div class="column is-vcentered">
+                    <h3 class="title is-3">
+                        Sunset is not <em>just</em> another BlueSky client
+                    </h3>
+                    <br/>
+                    <h4 class="subtitle is-4">
+                        Because this one is fully community-driven
+                    </h4>
+                </div>           
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="columns">
+                <div class="column is-one-fifth"></div>
+                <div class="column is-one-fifth">
+                    <h3 class="title is-3 has-text-centered">
+                        Community
+                    </h3>
+                    <h4 class="subtitle is-4 has-text-centered">
+                        Made by users for users
+                    </h4>
+                    <p class="has-text-centered">
+                    Sunset is made thinking on what we, the users, do actually want, and focusing on great user experience.
+                    </p>
+                </div>
+                <div class="column is-one-fifth">
+                    <h3 class="title is-3 has-text-centered">
+                        Safe to use
+                    </h3>
+                    <h4 class="subtitle is-4 has-text-centered">
+                        We don't keep your data
+                    </h4>
+                    <p class="has-text-centered">
+                        Sunset is powered by BlueSky and AT Proto, all data you can see or send here, lives in BluesSky
+                        or their respected owners' Personal Data Servers.
+                    </p>
+                </div>
+                <div class="column is-one-fifth">
+                    <h3 class="title is-3 has-text-centered">
+                        Contribute
+                    </h3>
+                    <h4 class="subtitle is-4 has-text-centered">
+                        We are OpenSource!
+                    </h4>
+                    <p class="has-text-centered">
+                        Did you find a bug? Do you think you can fix it? All our source code is available on GitHub, and it is MIT licensed!
+                    </p>
+                </div>
+                <div class="column is-one-fifth"></div>                 
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    Made with <span style="color: #e25555;">&hearts;</span> by Juanjo Salvador
+                </p>
+            </div>
+        </footer>        
+    </div>
+  </body>
+      <script>
+        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+            if (localStorageTheme !== null) {
+                return localStorageTheme;
+            }
+
+            if (systemSettingDark.matches) {
+                return "dark";
+            }
+
+            return "light";
+        }
+
+        const localStorageTheme = localStorage.getItem("theme");
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+        // target the button using the data attribute we added earlier
+        const button = document.querySelector("[data-theme-toggle]");
+        button.innerHTML = "dark" ? "<strong>Dark 🌙</strong>" : "<strong>Light ☀️</strong>";
+
+        button.addEventListener("click", () => {
+            const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
+            const newCta = newTheme === "dark" ? "<strong>Dark 🌙</strong>" : "<strong>Light ☀️</strong>";
+            button.innerHTML = newCta;  
+            button.setAttribute("aria-label", newCta);
+            document.querySelector("html").setAttribute("data-theme", newTheme);
+            localStorage.setItem("theme", newTheme);
+            currentThemeSetting = newTheme;
+        });
+    </script>
+</html>
